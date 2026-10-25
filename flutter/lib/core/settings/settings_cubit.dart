@@ -49,11 +49,11 @@ class SettingsCubit extends Cubit<SettingsState> {
     }
   }
 
-  /// If the system language isn't in the supported list, use ko
+  /// If the system language isn't in the supported list, use en (English edition)
   static Locale resolve(Locale? device, Iterable<Locale> supported) {
     for (final l in supported) {
       if (l.languageCode == device?.languageCode) return l;
     }
-    return const Locale('ko');
+    return const Locale('en');
   }
 }

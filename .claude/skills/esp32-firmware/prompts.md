@@ -38,7 +38,7 @@ Numbers kept in other files: `PD-01`–`PD-04` (debugging, RCA, memory compariso
 | Repository | `~/home-ai-speaker` | Paths inside prompts are relative to the repository |
 | Port | `/dev/cu.usbmodem*` | Your port, found in Chapter 1. On Windows, the `COM` number |
 | AI key | OpenAI or Gemini | Two exceptions: the USB console `key` command in Chapter 6 accepts only an OpenAI key, and Korean teacher mode is OpenAI Live only |
-| Model names | `gpt-live-1`, `gemini-3.8-live`, etc. | May change by the time of publication. See Appendix D |
+| Model names | `gpt-live-1`, `gemini-3.8-live`, etc. | May have changed by the time you read this. See Appendix D |
 | Phone | Android | If the app code has iOS settings, leave them alone |
 
 ## Chapter 1: Development Environment

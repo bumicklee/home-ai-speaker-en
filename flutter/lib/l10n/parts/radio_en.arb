@@ -74,7 +74,7 @@
   "radioSearchByTag": "Genre",
   "radioSearchNameHint": "Station name (e.g. BBC, jazz)",
   "radioSearchTagHint": "Genre tag (e.g. jazz, kpop, news)",
-  "radioSearchHlsNote": "Korean broadcasters like KBS, MBC and SBS only stream in HLS, which the speaker can't play, so they don't appear",
+  "radioSearchHlsNote": "Stations that only stream in HLS can't be played by the speaker, so they don't appear",
   "radioSearchIdle": "Search by name or genre. Only stations the speaker can play are shown",
   "radioSearchNoResults": "No stations the speaker can play",
   "radioSearchFailed": "Couldn't get the station list. Check your internet connection",

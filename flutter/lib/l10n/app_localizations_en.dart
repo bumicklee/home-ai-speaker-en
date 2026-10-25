@@ -32,16 +32,16 @@ class AppLocalizationsEn extends AppLocalizations {
       'A Gemini key starts with AIza and has only letters, digits, - and _ (check nothing like :wq got pasted at the end)';
 
   @override
-  String get aiPriceShortOpenAiSaver => 'About ₩15k/month';
+  String get aiPriceShortOpenAiSaver => 'About \$11/month';
 
   @override
-  String get aiPriceShortOpenAiLive => 'About ₩126k/month';
+  String get aiPriceShortOpenAiLive => 'About \$90/month';
 
   @override
-  String get aiPriceShortGeminiSaver => 'About ₩10k/month';
+  String get aiPriceShortGeminiSaver => 'About \$7/month';
 
   @override
-  String get aiPriceShortGeminiLive => 'About ₩40k/month';
+  String get aiPriceShortGeminiLive => 'About \$29/month';
 
   @override
   String get aiShortSaverNote => 'Replies 1–2 s later';
@@ -50,16 +50,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get aiShortLiveNote => 'You can interrupt';
 
   @override
-  String get aiPriceOpenAiSaver => 'About ₩15,000/month';
+  String get aiPriceOpenAiSaver => 'About \$11/month';
 
   @override
-  String get aiPriceOpenAiLive => 'About ₩126,000/month';
+  String get aiPriceOpenAiLive => 'About \$90/month';
 
   @override
-  String get aiPriceGeminiSaver => 'About ₩10,000/month';
+  String get aiPriceGeminiSaver => 'About \$7/month';
 
   @override
-  String get aiPriceGeminiLive => 'About ₩40,000/month';
+  String get aiPriceGeminiLive => 'About \$29/month';
 
   @override
   String get aiDescOpenAiSaver =>
@@ -67,7 +67,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiDescOpenAiLive =>
-      'The most natural and fastest. You pay for the whole connected time (about ₩70 a minute).';
+      'The most natural and fastest. You pay for the whole connected time (about \$0.05 a minute).';
 
   @override
   String get aiDescGeminiSaver =>
@@ -726,7 +726,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get engRealtimeNote =>
-      'Korean lessons use the real-time API (OpenAI) · about ₩70 a minute';
+      'Korean lessons use the real-time API (OpenAI) · about \$0.05 a minute';
 
   @override
   String get engNeedOpenAiKey =>
@@ -1540,7 +1540,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get radioSearchHlsNote =>
-      'Korean broadcasters like KBS, MBC and SBS only stream in HLS, which the speaker can\'t play, so they don\'t appear';
+      'Stations that only stream in HLS can\'t be played by the speaker, so they don\'t appear';
 
   @override
   String get radioSearchIdle =>

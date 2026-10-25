@@ -42,9 +42,9 @@ void main() {
     expect(c.state, const SettingsState(themeMode: ThemeMode.light, locale: Locale('en')));
   });
 
-  test('unsupported system language falls back to ko', () {
+  test('unsupported system language falls back to en', () {
     const supported = [Locale('en'), Locale('ko')];
-    expect(SettingsCubit.resolve(const Locale('ja'), supported), const Locale('ko'));
+    expect(SettingsCubit.resolve(const Locale('ja'), supported), const Locale('en'));
     expect(SettingsCubit.resolve(const Locale('en', 'US'), supported), const Locale('en'));
   });
 }

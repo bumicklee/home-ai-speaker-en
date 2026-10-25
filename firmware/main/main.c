@@ -415,7 +415,7 @@ static void on_app_event(void *arg, esp_event_base_t base, int32_t id, void *dat
         break;
     case APP_EVT_WAKE_DETECTED:
         led_ring_flash_wake();
-        audio_core_music_duck(true);    /* duck right away so speech is easier to recognize (Section 2.5) */
+        audio_core_music_duck(true);    /* duck right away so speech is easier to recognize (design doc Section 2.5) */
         if (s_mode == SYS_MODE_NORMAL && !live_voice_active()) {
             live_voice_start();
         }

@@ -89,6 +89,6 @@
   "engAgain": "Free talk again",
   "engHome": "Home",
   "engLastLesson": "Last lesson summary",
-  "engRealtimeNote": "Korean lessons use the real-time API (OpenAI) · about ₩70 a minute",
+  "engRealtimeNote": "Korean lessons use the real-time API (OpenAI) · about $0.05 a minute",
   "engNeedOpenAiKey": "Korean lessons need an OpenAI key. Add it in Assistant > AI · Conversation mode."
 }

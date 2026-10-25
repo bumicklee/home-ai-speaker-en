@@ -15,7 +15,7 @@
 extern "C" {
 #endif
 
-#define SAVER_EP_SILENCE_END_MS   700    /* 0.7 s of silence ends speech (Section 11.6) */
+#define SAVER_EP_SILENCE_END_MS   700    /* 0.7 s of silence ends speech (design doc Section 11.6) */
 #define SAVER_EP_MAX_UTTERANCE_MS 30000  /* speech 30 s max */
 
 typedef struct {

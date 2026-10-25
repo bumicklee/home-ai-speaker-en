@@ -23,7 +23,7 @@ The general template is T-01. Use P02-01 and P02-02 when you first create the pl
 Reference document: the plan document template in Chapter 2 of this book, the existing feature table in docs/01-plan/.
 Write a one-page plan document for (feature name) as docs/01-plan/(slug).plan.md. Goal (who, when, what), success criteria (sentences confirmable by one log line or a sound or LED), out of scope, risks, decisions to make (answer column "undecided").
 Do not change: the server-free design, the Android app, the behavior of existing features. Don't write code. I make the decisions.
-How to verify: within one A4 page (about 60 lines). Each success criterion must have the log or behavior to check attached.
+How to verify: within one printed page (about 60 lines). Each success criterion must have the log or behavior to check attached.
 ```
 
 ### P02-01 One-page plan document · Chapter 2, Section 2.3
@@ -31,7 +31,7 @@ How to verify: within one A4 page (about 60 lines). Each success criterion must 
 Reference document: the plan document template in Chapter 2 of this book. I'm attaching my notes (the "features our family wants" list from Chapter 0).
 Write docs/01-plan/home-speaker.plan.md in the template's order. In the goals table of section 1, put the features from my notes as F1–F7 and leave the priority empty (I'll decide). For decisions D1–D8 in section 6, keep the questions from Chapter 2 of this book as they are and set the answer column to "undecided".
 Do not change: the target board (Waveshare ESP32-S3-AUDIO-Board), ESP-IDF v5.5, the server-free design. Do not add features that are not in my notes.
-How to verify: it must fit on one page (about 60 lines on A4). If it runs over, trim the section 2 references and the section 8 risks.
+How to verify: it must fit on one page (about 60 lines on one printed page). If it runs over, trim the section 2 references and the section 8 risks.
 ```
 **How to verify** `wc -l docs/01-plan/home-speaker.plan.md`. **If you get stuck** If a feature that isn't in your notes got in: "Put the lines of my notes and the section 1 table of the plan side by side, and delete the lines that aren't in my notes."
 
@@ -69,7 +69,7 @@ How to verify: every new API has an error response, and every new buffer has its
 ```text
 Based on the 'emergency mode' note in the to-do list, write a one-page emergency mode design document as docs/design-emergency-mode.md. Don't write code.
 Reference document: the 'emergency mode' note in the to-do list (behavior, trigger words, limits, what it doesn't do, implementation notes), the Telegram tool protection from Chapter 15 (tool_guard TLG-14), the 'LAN API' section of the design document (docs/design.md).
-Do not change: the TLG-14 protection makes an exception only for the emergency tool. No direct calls or texts to 119 (emergency services). Write "the speaker is not presented as the primary way to call for help" on the first line of the design document.
+Do not change: the TLG-14 protection makes an exception only for the emergency tool. No direct calls or texts to 911 (emergency services). Write "the speaker is not presented as the primary way to call for help" on the first line of the design document.
 How to verify: the design document must have (1) the 5 steps of behavior, (2) a table of trigger word groups, (3) 5 limits, (4) what it doesn't do, (5) firmware, app, and test notes. Write nothing beyond that.
 ```
 **How to verify** Read it yourself for the five groups. Check the first-line sentence. **If you get stuck** If the design document writes a sentence promising an emergency-call feature, have it deleted.

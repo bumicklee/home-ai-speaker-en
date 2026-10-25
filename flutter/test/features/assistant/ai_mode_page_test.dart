@@ -58,7 +58,7 @@ void main() {
     expect(find.text("No key · can't use"), findsOneWidget);
     expect(find.text('Add Gemini key (hold the middle button 3 s → sent over Bluetooth)'), findsOneWidget);
     expect(find.text('② OpenAI conversation mode'), findsOneWidget);
-    expect(find.text('About ₩15,000/month'), findsOneWidget);
+    expect(find.text('About \$11/month'), findsOneWidget);
     expect(find.text('Coming soon'), findsOneWidget); // openai.live is not in available
     expect(find.textContaining('real-time API (OpenAI)'), findsOneWidget);
 

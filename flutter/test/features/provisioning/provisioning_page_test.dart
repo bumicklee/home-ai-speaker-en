@@ -39,7 +39,7 @@ void main() {
     await t.pumpAndSettle();
     expect(find.text('Which AI should it use?'), findsOneWidget);
     expect(find.text('OpenAI API key (required)'), findsOneWidget);
-    expect(find.text('About ₩15k/month · Replies 1–2 s later'), findsOneWidget);
+    expect(find.text('About \$11/month · Replies 1–2 s later'), findsOneWidget);
     expect(find.text('Enter the OpenAI API key to continue'), findsOneWidget);
     FilledButton button() => t.widget<FilledButton>(find.widgetWithText(FilledButton, 'Find speaker'));
     expect(button().onPressed, isNull);
@@ -49,7 +49,7 @@ void main() {
     await t.pump();
     expect(find.text('Gemini API key (required)'), findsOneWidget);
     expect(find.text('(may not be ready yet on some speakers)'), findsOneWidget);
-    expect(find.text('About ₩10k/month · Replies 1–2 s later'), findsOneWidget);
+    expect(find.text('About \$7/month · Replies 1–2 s later'), findsOneWidget);
 
     await t.tap(find.text("This speaker already has this AI's key (adding another phone)"));
     await t.pump();

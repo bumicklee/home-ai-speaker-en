@@ -33,7 +33,7 @@ This book's app is Android only and is not released to a store. The release APK 
 | Repository | `~/home-ai-speaker` | Paths inside prompts are relative to the repository |
 | Port | `/dev/cu.usbmodem*` | Your port, found in Chapter 1. On Windows, the `COM` number |
 | AI key | OpenAI or Gemini | Two exceptions: the USB console `key` command in Chapter 6 accepts only an OpenAI key, and Korean teacher mode is OpenAI Live only |
-| Model names | `gpt-live-1`, `gemini-3.8-live`, etc. | May change by the time of publication. See Appendix D |
+| Model names | `gpt-live-1`, `gemini-3.8-live`, etc. | May have changed by the time you read this. See Appendix D |
 | Phone | Android | If the app code has iOS settings, leave them alone |
 
 ## Chapter 1: Development Environment
@@ -224,7 +224,7 @@ How to verify: cite the source page for each unit price, and label estimated fig
 
 ### P17-03 Saver mode app (worker 2) · Chapter 17, Section 17.3
 ```text
-Modify the app based on the 'App Changes' part of the same design document's 'Detailed Design' section and the "Choose AI · Live / Saver mode" row of the design canvas. Change step 1 of first-time setup to "① choose the AI → that AI's key (required) or 'This speaker already has this AI's key (adding another phone)' → ② Saver mode / Live (show the monthly cost)". New screen /assistant/ai (AI card + mode card). Gemini key under System > Keys. On the home status card, "OpenAI · Saver". On the Korean teacher screen, "Korean lessons use the real-time API (OpenAI) · about ₩70 a minute".
+Modify the app based on the 'App Changes' part of the same design document's 'Detailed Design' section and the "Choose AI · Live / Saver mode" row of the design canvas. Change step 1 of first-time setup to "① choose the AI → that AI's key (required) or 'This speaker already has this AI's key (adding another phone)' → ② Saver mode / Live (show the monthly cost)". New screen /assistant/ai (AI card + mode card). Gemini key under System > Keys. On the home status card, "OpenAI · Saver". On the Korean teacher screen, "Korean lessons use the real-time API (OpenAI) · about $0.05 a minute".
 Do not change: gather the provider and mode lists and their strings in lib/core/ai/ so several screens share them. If ai is missing, as with old firmware, treat it as openai/live, available ["openai.live"]. No key → locked; key present but not in available → "Coming soon". Remember the key in vault_gemini_key.
 How to verify: flutter analyze with no issues; write tests for the settings model, ai parsing, BLE gemini_key, the first-time setup lock, the AI screen lock rules, and the Korean lesson key check, and flutter test all pass.
 ```
